@@ -81,7 +81,8 @@ keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 
 -- Keyboard Shortcuts --
 keymap("n", "<leader>c", "<cmd>bdelete<CR>", opts) -- Close Buffer
-
+keymap("i", "<C-e>", "<ESC>ea", opts) -- Move curser end of word
+keymap("i", "<C-,>", "<ESC>bi", opts) -- Move cursor begin of word 
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)

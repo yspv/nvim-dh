@@ -4,5 +4,7 @@ if not status_ok then
 end
 
 buffeline.setup {
-
+  options = {
+    offsets = {{ filetype = "NvimTree", text = "Explorer", padding = 1 }},
+  }
 }
