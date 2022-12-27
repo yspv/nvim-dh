@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use { "windwp/nvim-autopairs" }
   use { "akinsho/bufferline.nvim" }
   use { "nvim-lualine/lualine.nvim" }
- 
+  use { "rebelot/heirline.nvim" }
 	-- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   use { "ishan9299/nvim-solarized-lua" }  

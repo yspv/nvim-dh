@@ -5,6 +5,6 @@ end
 
 lualine.setup {
   options = {
-    disabled_filetypes = { 'packer', 'NvimTree' }
+    disabled_filetypes = { 'packer' }
   }
 }
