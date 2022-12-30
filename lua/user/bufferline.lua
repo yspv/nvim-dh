@@ -3,8 +3,22 @@ if not status_ok then
   return
 end
 
+
 buffeline.setup {
   options = {
-    offsets = {{ filetype = "NvimTree", text = "Explorer", padding = 1 }},
+    offsets = {
+      {
+        filetype = "NvimTree",
+        text = "Explorer",
+        highlight="Directory",
+        padding = 1,
+      },
+      {
+        filetype = "toggleterm",
+        text = "Terminal",
+        highlight = "Directory",
+        padding = 1,
+      }
+    },
   }
 }

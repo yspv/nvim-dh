@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 toggteterm.setup {
-  size = 60,
+  size = 55,
   open_mapping = [[<c-\>]],
   hide_numbers = true,
 	shade_terminals = true,
