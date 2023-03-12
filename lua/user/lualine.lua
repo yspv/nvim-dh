@@ -17,7 +17,27 @@ local conditions = {
   end,
 }
 
-local colors = require("onenord.colors").load()
+local colors = {
+    none    = 'none',
+	babasse02 = '#073642',
+	rered     = '#dc322f',
+	grgreen   = '#859900',
+	yeyellow  = '#b58900',
+	blblue    = '#268bd2',
+	mamagenta = '#d33682',
+	cycyan    = '#2aa198',
+	babasse2  = '#eee8d5',
+	babasse03 = '#002b36',
+	baback    = '#002b36',
+	ororange  = '#cb4b16',
+	babase01  = '#586e75',
+	babasse00 = '#657b83',
+	babasse0  = '#839496',
+	viviolet  = '#6c71c4',
+	babasse1  = '#93a1a1',
+	babasse3  = '#fdf6e3',
+	ererr_bg  = '#fdf6e3',
+}
 
 local config = {
   options = {
@@ -68,7 +88,7 @@ ins_left {
   symbols = { added = ' ', modified = '柳', removed = ' ' },
   diff_color = {
     added = {fg = colors.green},
-    modified = {fg = colors.cyan},
+    modified = {fg = '#51afef'},
   },
   cond = conditions.hide_in_width,
   padding = {left = 1, right = 1}
@@ -86,8 +106,7 @@ ins_right {
   'filetype',
   fmt = string.upper,
   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-  color = { fg = colors.light_gray, gui = 'bold' },
+  color = { fg = '#586e75', gui = 'bold' },
 }
-
 
 lualine.setup(config)

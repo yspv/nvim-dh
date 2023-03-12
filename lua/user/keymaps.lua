@@ -19,9 +19,11 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
--- Inssert key is changed to i/L
+-- Inssert key is changed to l/L
 keymap("n", "l", "i", opts)
 keymap("n", "L", "I", opts)
+keymap("n", "F", "E", opts)
+keymap("n", "f", "e", opts)
 -- Navigation
 keymap("n", "k", "h", opts)
 keymap("n", "n", "j", opts)
@@ -85,10 +87,10 @@ keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 -- Keyboard Shortcuts --
 keymap("n", "<leader>c", "<cmd>bdelete<CR>", opts) -- Close Buffer
 keymap("n", "<leader>w", "<cmd>w<cr>", opts)       -- Save File
-keymap("i", "<C-e>", "<ESC>ea", opts)              -- Move curser end of word
+keymap("i", "<C-e>", "<ESC>wa", opts)              -- Move curser end of word
 keymap("i", "<C-,>", "<ESC>bi", opts)              -- Move cursor begin of word 
 keymap("n", "<leader>g", "<S-g>", opts)            -- Go to line
-
+--keymap("i", "<M>", "<C-o>", opts)
 -- Terminal --
 -- Better terminal navigation
 keymap("t", "<C-k>", [[<C-\><C-n><C-W>h]], opts)
