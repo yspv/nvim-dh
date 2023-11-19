@@ -42,7 +42,7 @@ packer.init({
 return packer.startup(function(use)
     use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" }
     use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" }
-    use { "kyazdani42/nvim-web-devicons", commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352" }
+    --use { "kyazdani42/nvim-web-devicons", commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352" }
     use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
     use { "windwp/nvim-autopairs" }
     use { "akinsho/bufferline.nvim" }
@@ -59,21 +59,24 @@ return packer.startup(function(use)
     use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
     use { "L3MON4D3/LuaSnip" }--snippet engine
     use { "rafamadriz/friendly-snippets" }
+    use { "nvim-telescope/telescope.nvim"}
     -- LSP
     use { "neovim/nvim-lspconfig" }
     use { "williamboman/mason.nvim" } -- simple to use language server installer
     use { "williamboman/mason-lspconfig.nvim" } -- simple to use language server installer
     use { 'jose-elias-alvarez/null-ls.nvim' }
+    use { 'mfussenegger/nvim-jdtls' }
+    use { 'mfussenegger/nvim-dap' }
     -- Colorschemes
     use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
     use { "ishan9299/nvim-solarized-lua" }
     use { "ajmwagar/vim-deus" }
     use { "jaredgorski/fogbell.vim" }
     use { "sainnhe/everforest" }
-    use {'NvChad/nvim-colorizer.lua'}
+    --use {'NvChad/nvim-colorizer.lua'}
+    use {'norcalli/nvim-colorizer.lua'}
     use { 'rmehri01/onenord.nvim'}
     use { 'rose-pine/neovim' }
-    use { 'harg/iceberg.nvim' }
     use { "ellisonleao/gruvbox.nvim" }
     use { "luisiacc/gruvbox-baby" }
     use { "lalitmee/cobalt2.nvim" }
@@ -83,6 +86,20 @@ return packer.startup(function(use)
     use { "rktjmp/lush.nvim" }
     use { "mcchrish/zenbones.nvim" }
     use { 'nyoom-engineering/oxocarbon.nvim' }
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "koron/vim-monochromenote" }
+    use { "ewilazarus/preto" }
+    use { "pgdouyon/vim-yin-yang" }
+    use { 'Mofiqul/dracula.nvim'}
+    use { 'almo7aya/neogruvbox.nvim' }
+    use { "lunarvim/templeos.nvim" }
+    use { "aktersnurra/no-clown-fiesta.nvim" }
+    use {'rockerBOO/boo-colorscheme-nvim'}
+    use { 'Rigellute/rigel' }
+    use {'HiPhish/nvim-ts-rainbow2'}
+    use { 'Abstract-IDE/Abstract-cs' }
+    use { "cocopon/iceberg.vim" }
+    use { "craftzdog/solarized-osaka.nvim" }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

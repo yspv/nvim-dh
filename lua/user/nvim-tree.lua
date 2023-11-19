@@ -9,13 +9,37 @@ if not config_status_ok then
 end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
-
+--[[
+nvim_tree.setup {
+    disable_netrw = true,
+    renderer = {
+        group_empty = true,
+        icons = {
+            webdev_colors = false,
+            glyphs = {
+                default = "",
+                folder = {
+                  arrow_closed = "",
+                  arrow_open = "",
+                  default = "",
+                  open = "",
+                  empty = "",
+                  empty_open = "",
+                  symlink = "",
+                  symlink_open = "",
+                },
+            },
+        },
+    },
+}
+]]--
 nvim_tree.setup {
   update_focused_file = {
     enable = true,
     update_cwd = true,
   },
   renderer = {
+    group_empty = true,
     root_folder_modifier = ":t",
     icons = {
       glyphs = {
@@ -63,5 +87,9 @@ nvim_tree.setup {
         { key = "v", cb = tree_cb "vsplit" },
       }
     }
+  },
+  git = {
+      enable = true,
+      ignore = false
   }
 }

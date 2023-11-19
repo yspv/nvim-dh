@@ -15,17 +15,25 @@ configs.setup({
     sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   
     highlight = {
-		enable = true, -- false will disable the whole extension
+		enable = true,      -- false will disable the whole extension
 		disable = { "css" }, -- list of language that will be disabled
 	},
     autopairs = {
 		enable = true,
 	},
-    indent = { enable = false, disable = { "python", "css", "pascal", "c"} },
+    indent = { enable = false, disable = { "python", "css", "pascal"} },
 
     context_commentstring = {
 		enable = true,
 		enable_autocmd = false,
 	},
-
+  rainbow = {
+      enable = true,
+      query = 'rainbow-parens',
+      strategy = require('ts-rainbow').strategy.global,
+  }
 })
+
+local parsers = require "nvim-treesitter.parsers"
+
+--vim.treesitter.language.register("typescript", "vue", "java")

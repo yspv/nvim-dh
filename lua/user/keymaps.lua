@@ -85,8 +85,8 @@ keymap("x", "<A-e>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 
 -- Keyboard Shortcuts --
-keymap("n", "<leader>c", "<cmd>bdelete<CR>", opts) -- Close Buffer
-keymap("n", "<leader>w", "<cmd>w<cr>", opts)       -- Save File
+keymap("n", "<leader>b", "<cmd>BufferLinePickClose<CR>", opts) -- Close Buffer
+keymap("n", "<leader>w", "<cmd>w!<cr>", opts)       -- Save File
 keymap("i", "<C-e>", "<ESC>wa", opts)              -- Move curser end of word
 keymap("i", "<C-,>", "<ESC>bi", opts)              -- Move cursor begin of word 
 keymap("n", "<leader>g", "<S-g>", opts)            -- Go to line
